@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Site</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0px auto;
+            /* border: 2px solid saddlebrown; */
+
+        }
+
+        h1 {
+            font-size: 10vw;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        .tiger img {
+            width: 90%;
+            margin-left: 45px;
+            border-radius: 20px;
+        }
+
+        .second-container {
+            display: flex;
+        }
+
+        .second-container .split {
+            width: 50%;
+        }
+
+        .split img {
+            width: 90%;
+            height: 90%;
+            margin-left: 10px;
+            border-radius: 15px;
+        }
+
+        /* Multi column styles */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+
+        .food {
+            border: 2px solid rgb(81, 63, 16);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .food img {
+            width: 100%;
+            border-radius: 5%;
+        }
+
+        .food button {
+            color: white;
+            background-color: orangered;
+            border: 0;
+            border-radius: 5px;
+            height: 35px;
+            width: 100px;
+        }
+
+        @media screen and (max-width:420px) {
+            .second-container {
+                flex-direction: column;
+            }
+
+            .second-container .split {
+                margin-left: 10px;
+                width: 100%;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+
+            .food h2 {
+                text-align: center;
+            }
+
+            .food h4 {
+                text-align: center;
+            }
+
+            .food p {
+                text-align: center;
+            }
+
+            .food button {
+                margin-left: 110px;
+            }
+
+        }
+
+        @media screen and (min-width:420px) and (max-width:700px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="tiger">
+        <h1>Now I am trying Responsive my website</h1>
+        <img src="images/Stripes_Tiger-Tiger.webp" alt="">
+    </section>
+    <section>
+        <h3>Two Section Of Foood and tiger</h3>
+        <div class="second-container">
+            <div class="split">
+                <img src="images/Stripes_Tiger-Tiger.webp" alt="">
+            </div>
+
+            <div class="split">
+                <img src="images/food.webp" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h3>Multi Column Design</h3>
+        <div class="container">
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-1</h2>
+                <h4>Price-100</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci amet aspernatur perspiciatis sunt
+                    tenetur similique non quo, excepturi optio quae vero eius vitae, officiis animi quisquam dolorem
+                    veniam
+                    beatae minus, quis quaerat ipsam! Labore, sunt.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-2</h2>
+                <h4>Price-200</h4>
+                <p>Reiciendis saepe odit, hic natus nemo eaque assumenda, ab ipsum expedita doloremque dolorum possimus
+                    magnam aperiam quos quas nulla, incidunt accusamus explicabo atque. Fuga laboriosam quibusdam rem ex
+                    vitae a repellendus accusantium magni perspiciatis quis!</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-3</h2>
+                <h4>Price-300</h4>
+                <p>Natus quis facere iure asperiores ratione, tempore autem magni excepturi quos distinctio nam, alias
+                    inventore reprehenderit recusandae eum exercitationem nobis impedit! Excepturi reiciendis temporibus
+                    atque veritatis corporis aperiam sit, voluptatem, dignissimos architecto corrupti, dolor id.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-4</h2>
+                <h4>Price-400</h4>
+                <p>Magnam, ipsum! Inventore dignissimos soluta nam saepe sed minima necessitatibus, est animi pariatur?
+                    Eius
+                    delectus iusto vero omnis? Voluptatibus assumenda ratione distinctio quisquam praesentium
+                    reprehenderit
+                    explicabo eaque, nobis ex magnam alias consequatur. Sequi, at culpa.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-5</h2>
+                <h4>Price-500</h4>
+                <p>Praesentium optio provident rem temporibus iure fugit modi eum itaque officia beatae nam quas
+                    quaerat,
+                    molestias consequuntur sint! Eius suscipit maiores perferendis? Magni eveniet, temporibus ratione
+                    aperiam omnis culpa officiis quam distinctio eligendi provident sapiente.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-6</h2>
+                <h4>Price-600</h4>
+                <p>Numquam sit nostrum voluptatem ad architecto quis velit placeat maxime. Adipisci voluptas dolorem
+                    doloremque. Voluptas in nulla asperiores accusamus nesciunt repellendus corrupti cupiditate natus
+                    facilis. Provident, totam. Alias ipsum nisi in? Iste, placeat vitae. Sunt?</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-7</h2>
+                <h4>Price-700</h4>
+                <p>Necessitatibus ab, distinctio eum aut hic minima quas tempore voluptate ratione, quia cupiditate
+                    libero
+                    odio! Soluta quo tenetur aperiam iste, nulla ipsam aliquam ab at unde id excepturi eligendi quisquam
+                    reprehenderit laudantium dolor eaque aut!</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-8</h2>
+                <h4>Price-800</h4>
+                <p>Maxime animi debitis repellendus voluptatibus quidem iure, rem quae unde adipisci accusamus laborum
+                    saepe
+                    exercitationem molestiae reprehenderit culpa minima molestias suscipit cumque soluta assumenda? In
+                    iste
+                    debitis temporibus. Accusamus qui blanditiis porro ab fugiat corrupti?</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-9</h2>
+                <h4>Price-900</h4>
+                <p>Nostrum quisquam impedit natus cumque doloribus perspiciatis voluptatum! Culpa libero animi
+                    perferendis
+                    eius nulla id dicta necessitatibus, quibusdam adipisci explicabo harum consectetur blanditiis,
+                    repudiandae nostrum corporis sapiente tempore velit provident fuga aspernatur. Ea, reiciendis
+                    sapiente.
+                </p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-10</h2>
+                <h4>Price-1000</h4>
+                <p>Ipsam facere molestiae reiciendis, vero consequuntur nihil recusandae velit neque explicabo sed?
+                    Inventore dolores neque accusantium beatae rem omnis aliquam adipisci. Delectus reprehenderit
+                    accusamus
+                    ducimus quisquam laboriosam consequuntur ut accusantium, nobis cumque ea eveniet harum.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-11</h2>
+                <h4>Price-1100</h4>
+                <p>Similique inventore ex iure adipisci distinctio possimus repudiandae. Fugiat ipsam laborum aspernatur
+                    reprehenderit unde. Quam exercitationem facilis ullam! Ullam excepturi illum ad odio. Velit magni ex
+                    dicta, tempore saepe rerum. Ipsam neque fugit dolores voluptate!</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/food.webp" alt="">
+                <h2>Item-12</h2>
+                <h4>Price-1200</h4>
+                <p>Similique eveniet explicabo iusto voluptates hic molestiae optio inventore quod cum, fugit ad
+                    nesciunt
+                    eos saepe doloribus nam accusamus rerum aperiam consectetur, ea voluptatibus amet! Provident quos
+                    voluptates iure sequi asperiores nobis facere unde esse!</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
